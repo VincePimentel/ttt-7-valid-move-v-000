@@ -1,12 +1,8 @@
 # code your #valid_move? method here
 def valid_move?(array, index)
-  if index.between?(0, 8) == true
+  if index.between?(0, 8) == true || position_taken? == false
     true
-  elsif index.between?(0, 8) == false
-    false
-  elsif position_taken? == false
-    true
-  elsif position_taken? == true
+  elsif index.between?(0, 8) == false || position_taken? == true
     false
   end
 end
@@ -16,6 +12,6 @@ def position_taken?(array, index)
   if array[index] == " " || array[index] == "" || array[index] == nil
     false
   elsif array[index] == "X" || array[index] == "O"
-    true
+    false
   end
 end
