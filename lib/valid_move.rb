@@ -1,5 +1,5 @@
 # code your #valid_move? method here
-def valid_move?(array, index)
+def valid_move?
   if position_taken == true
     true
   else
