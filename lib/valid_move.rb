@@ -4,7 +4,7 @@ def valid_move?(array, index)
     true
   elsif index.between?(0, 8) == false
     false
-  elsif position_taken? == true
+  elsif array[index] == "X" || array[index] == "O"
     false
   end
 end
