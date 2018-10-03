@@ -2,8 +2,8 @@
 def valid_move?(array, index)
   if index.between?(0, 8) == true
     true
-  else
-    false
+  elsif position_taken? == false
+    true
   end
 end
 
