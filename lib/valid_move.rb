@@ -2,7 +2,7 @@
 def valid_move?(array, index)
   if index.between?(0, 8) == true || position_taken? == false
     true
-  elsif index < 0 || index > 8
+  elsif index < 0 == true || index > 8 == true
     false
   elsif position_taken? == true
     false
