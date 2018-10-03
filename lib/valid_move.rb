@@ -4,6 +4,8 @@ def valid_move?(array, index)
     true
   elsif position_taken? == false
     true
+  elsif position_taken? == true
+    false
   end
 end
 
